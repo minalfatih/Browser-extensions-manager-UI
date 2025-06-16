@@ -2,7 +2,7 @@
 
 async function fetchData() {
   try {
-    let data = await fetch("data.json");
+    let data = await fetch("/data/data.json");
     let dataFile = await data.json();
 
     for (let i = 0; i < dataFile.length; i++) {
