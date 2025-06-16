@@ -1,0 +1,51 @@
+@use "../helpers/helpers" as *;
+
+/* start header */
+header {
+  .container {
+    width: 82%;
+    background-color: $Neutral-800;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    @include transition;
+    &.light {
+      background-color: $Neutral-0;
+      box-shadow: 0 1px 5px 0px $Neutral-300;
+    }
+    svg {
+      .logo-name {
+        fill: #ffffff;
+        &.dark {
+          fill: #09153e;
+        }
+      }
+    }
+    .theme {
+      background-color: $Neutral-700;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      @include transition;
+      &.active {
+        background-color: $Neutral-100;
+        &:hover {
+          background-color: $Neutral-300;
+        }
+      }
+      &:hover {
+        background-color: $Neutral-600;
+      }
+      &:focus {
+        border: 2px solid $Red-700;
+      }
+    }
+  }
+}
+/* end header */

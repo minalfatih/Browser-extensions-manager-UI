@@ -1,0 +1,315 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#040918), to(#091540));
+  background-image: linear-gradient(180deg, #040918 0%, #091540 100%);
+  background-repeat: no-repeat;
+  min-height: 100dvh;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+body.light {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf2fc), to(#eef8f9));
+  background-image: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+}
+
+/* start header */
+header .container {
+  width: 82%;
+  background-color: hsl(226, 25%, 17%);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+header .container.light {
+  background-color: hsl(200, 60%, 99%);
+  -webkit-box-shadow: 0 1px 5px 0px hsl(0, 0%, 78%);
+          box-shadow: 0 1px 5px 0px hsl(0, 0%, 78%);
+}
+header .container svg .logo-name {
+  fill: #ffffff;
+}
+header .container svg .logo-name.dark {
+  fill: #09153e;
+}
+header .container .theme {
+  background-color: hsl(225, 23%, 24%);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+header .container .theme.active {
+  background-color: hsl(0, 0%, 93%);
+}
+header .container .theme.active:hover {
+  background-color: hsl(0, 0%, 78%);
+}
+header .container .theme:hover {
+  background-color: hsl(226, 11%, 37%);
+}
+header .container .theme:focus {
+  border: 2px solid hsl(3, 77%, 44%);
+}
+
+/* end header */
+/* start home section */
+section .container .filter {
+  width: 90%;
+  color: hsl(200, 60%, 99%);
+  margin: 0px 0 25px;
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  section .container .filter {
+    margin: 30px 0 25px;
+  }
+}
+section .container .filter h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+section .container .filter ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section .container .filter ul li span {
+  background-color: hsl(225, 23%, 24%);
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 1px solid hsl(226, 11%, 37%);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+section .container .filter ul li span:hover {
+  background-color: hsl(226, 11%, 37%);
+}
+section .container .filter ul li span:focus {
+  border: 2px solid hsl(3, 77%, 44%);
+}
+section .container .filter ul li.active span {
+  background-color: hsl(3, 71%, 56%);
+  color: hsl(226, 74.6%, 13.9%);
+  padding: 5px 15px;
+  border: none;
+}
+section .container .filter.light {
+  color: hsl(226, 74.6%, 13.9%);
+}
+section .container .filter.light ul li span {
+  background-color: hsl(200, 60%, 99%);
+  border-color: hsl(0, 0%, 93%);
+}
+section .container .filter.light ul li.active span {
+  background-color: hsl(3, 71%, 56%);
+  color: hsl(200, 60%, 99%);
+}
+section .container .list-boxs .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  section .container .list-boxs .row {
+    -ms-grid-columns: (370px)[2];
+    grid-template-columns: repeat(2, 370px);
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  section .container .list-boxs .row {
+    -ms-grid-columns: (370px)[3];
+    grid-template-columns: repeat(3, 370px);
+  }
+}
+section .container .list-boxs .row .box {
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: hsl(226, 25%, 17%);
+  padding: 15px;
+  border: 1px solid hsl(226, 11%, 37%);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+section .container .list-boxs .row .box.light {
+  background-color: hsl(200, 60%, 99%);
+  border-color: hsl(0, 0%, 93%);
+  -webkit-box-shadow: 0 1px 5px 0px hsl(0, 0%, 78%);
+          box-shadow: 0 1px 5px 0px hsl(0, 0%, 78%);
+}
+section .container .list-boxs .row .box .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 15px;
+}
+section .container .list-boxs .row .box .info h1 {
+  color: hsl(200, 60%, 99%);
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+section .container .list-boxs .row .box .info p {
+  color: hsl(0, 0%, 93%);
+  font-size: 1rem;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+section .container .list-boxs .row .box .info.light h1 {
+  color: hsl(226, 74.6%, 13.9%);
+}
+section .container .list-boxs .row .box .info.light p {
+  color: hsl(226, 11%, 37%);
+}
+section .container .list-boxs .row .box .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section .container .list-boxs .row .box .btns .remove {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: hsl(200, 60%, 99%);
+  border: 1px solid hsl(200, 60%, 99%);
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+section .container .list-boxs .row .box .btns .remove.light {
+  color: hsl(226, 74.6%, 13.9%);
+  border-color: hsl(0, 0%, 93%);
+}
+section .container .list-boxs .row .box .btns .remove.light:hover {
+  color: hsl(200, 60%, 99%);
+}
+section .container .list-boxs .row .box .btns .remove:hover {
+  background-color: hsl(3, 86%, 64%);
+  color: hsl(226, 74.6%, 13.9%);
+  border-color: hsl(3, 86%, 64%);
+}
+section .container .list-boxs .row .box .btns .remove:focus {
+  border: 2px solid hsl(3, 77%, 44%);
+}
+section .container .list-boxs .row .box .btns .toggle {
+  position: relative;
+  background-color: hsl(226, 11%, 37%);
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+section .container .list-boxs .row .box .btns .toggle.light {
+  background-color: hsl(0, 0%, 78%);
+}
+section .container .list-boxs .row .box .btns .toggle:focus {
+  border: 2px solid hsl(3, 77%, 44%);
+}
+section .container .list-boxs .row .box .btns .toggle .toggle-btn {
+  background-color: hsl(200, 60%, 99%);
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 3px;
+  right: 22px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+section .container .list-boxs .row .box .btns .toggle.active {
+  background-color: hsl(3, 71%, 56%);
+}
+section .container .list-boxs .row .box .btns .toggle.active .toggle-btn {
+  right: 4px;
+}
+
+/* end home section*/
+/*# sourceMappingURL=style.css.map */

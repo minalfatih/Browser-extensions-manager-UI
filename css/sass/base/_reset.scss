@@ -1,0 +1,15 @@
+@use "../helpers/helpers" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: $Dark-Gradient;
+  background-repeat: no-repeat;
+  min-height: 100dvh;
+  @include transition;
+  &.light {
+    background-image: $Light-Gradient;
+  }
+}

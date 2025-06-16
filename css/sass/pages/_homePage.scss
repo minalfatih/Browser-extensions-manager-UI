@@ -1,0 +1,201 @@
+@use "../helpers/helpers" as *;
+
+/* start home section */
+section {
+  .container {
+    .filter {
+      width: 90%;
+      color: $Neutral-0;
+      margin: 0px 0 25px;
+      @include md {
+        @media (min-width: #{$screen-md-min}) {
+          margin: 30px 0 25px;
+        }
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      ul {
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          span {
+            background-color: $Neutral-700;
+            padding: 5px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border: 1px solid $Neutral-600;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            @include transition;
+            &:hover {
+              background-color: $Neutral-600;
+            }
+            &:focus {
+              border: 2px solid $Red-700;
+            }
+          }
+          &.active {
+            span {
+              background-color: $Red-500;
+              color: $Neutral-900;
+              padding: 5px 15px;
+              border: none;
+            }
+          }
+        }
+      }
+      &.light {
+        color: $Neutral-900;
+        ul {
+          li {
+            span {
+              background-color: $Neutral-0;
+              border-color: $Neutral-100;
+            }
+            &.active {
+              span {
+                background-color: $Red-500;
+                color: $Neutral-0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .list-boxs {
+      .row {
+        justify-content: center;
+        @include md {
+          @media (min-width: #{$screen-md-min}) {
+            grid-template-columns: repeat(2, 370px);
+          }
+        }
+        @include xl {
+          @media (min-width: #{$screen-xl-min}) {
+            grid-template-columns: repeat(3, 370px);
+          }
+        }
+        .box {
+          min-height: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background-color: $Neutral-800;
+          padding: 15px;
+          border: 1px solid $Neutral-600;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          -o-border-radius: 15px;
+          @include transition;
+          &.light {
+            background-color: $Neutral-0;
+            border-color: $Neutral-100;
+            box-shadow: 0 1px 5px 0px $Neutral-300;
+          }
+          .info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 15px;
+            h1 {
+              color: $Neutral-0;
+              font-size: 1.4rem;
+              font-weight: 700;
+              @include transition;
+            }
+            p {
+              color: $Neutral-100;
+              font-size: 1rem;
+              @include transition;
+            }
+            &.light {
+              h1 {
+                color: $Neutral-900;
+              }
+              p {
+                color: $Neutral-600;
+              }
+            }
+          }
+          .btns {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .remove {
+              display: block;
+              width: fit-content;
+              color: $Neutral-0;
+              border: 1px solid $Neutral-0;
+              padding: 8px 15px;
+              cursor: pointer;
+              border-radius: 50px;
+              -webkit-border-radius: 50px;
+              -moz-border-radius: 50px;
+              -ms-border-radius: 50px;
+              -o-border-radius: 50px;
+              @include transition;
+              &.light {
+                color: $Neutral-900;
+                border-color: $Neutral-100;
+                &:hover {
+                  color: $Neutral-0;
+                }
+              }
+              &:hover {
+                background-color: $Red-400;
+                color: $Neutral-900;
+                border-color: $Red-400;
+              }
+              &:focus {
+                border: 2px solid $Red-700;
+              }
+            }
+            .toggle {
+              position: relative;
+              background-color: $Neutral-600;
+              width: 50px;
+              height: 30px;
+              border-radius: 15px;
+              cursor: pointer;
+              @include transition;
+              &.light {
+                background-color: $Neutral-300;
+              }
+              &:focus {
+                border: 2px solid $Red-700;
+              }
+              .toggle-btn {
+                background-color: $Neutral-0;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                top: 3px;
+                right: 22px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+              }
+              &.active {
+                background-color: $Red-500;
+                .toggle-btn {
+                  right: 4px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* end home section*/
