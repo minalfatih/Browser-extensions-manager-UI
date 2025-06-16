@@ -80,12 +80,12 @@ async function fetchData() {
     // theme
     document.querySelector(".theme").addEventListener("click", (el) => {
       if (el.target.classList.contains("light")) {
-        el.target.src = "/assets/images/icon-moon.svg";
+        el.target.src = "./assets/images/icon-moon.svg";
         el.target.classList.toggle("light");
         el.target.classList.add("active");
         themeMode();
       } else {
-        el.target.src = "/assets/images/icon-sun.svg";
+        el.target.src = "./assets/images/icon-sun.svg";
         el.target.classList.toggle("light");
         el.target.classList.remove("active");
         themeMode();
